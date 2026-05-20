@@ -1,4 +1,4 @@
-name: github actions demo
+name: initial build - manual
 on: workflow_dispatch
 jobs:
   build:
