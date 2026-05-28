@@ -7,6 +7,7 @@ jobs:
      - name: build the app
        run: echo "this is build demo"
   deploy:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: deploy the app
