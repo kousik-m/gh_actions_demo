@@ -1,0 +1,13 @@
+name: continues deploymentd demo
+on: push
+jobs:
+  build:
+   runs-on: ubuntu-latest
+   steps:
+     - name: build the app
+       run: echo "this is build demo"
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy the app
+        run: echo "deploy the app"
