@@ -8,6 +8,7 @@ jobs:
        run: echo "this is build demo"
   deploy:
     needs: build
+    if: github.ref_name == 'develop'
     runs-on: ubuntu-latest
     steps:
       - name: deploy the app
